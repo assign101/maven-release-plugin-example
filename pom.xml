@@ -2,12 +2,12 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.test</groupId>
 	<artifactId>maven-release-plugin-example</artifactId>
-	<version>0.6.0</version>
+	<version>0.6.1-SNAPSHOT</version>
 <properties><maven.compiler.source>1.8</maven.compiler.source><maven.compiler.target>1.8</maven.compiler.target></properties>
 	<scm>
 		<url>https://github.com/assign101/maven-release-plugin-example</url>
 		<connection>scm:git:https://github.com/assign101/maven-release-plugin-example.git</connection>
-         <tag>v${releaseVersion}</tag>
+         <tag>HEAD</tag>
   </scm>
 	
 	<!-- Repository Information -->
@@ -95,10 +95,6 @@
 					<!-- releaseProfiles configuration will actually force a Maven profile 
 						– the `releases` profile – to become active during the Release process. -->
 					<releaseProfiles>releases</releaseProfiles>
-                                           <checkModificationExcludes>
-        <checkModificationExclude>pom.xml</checkModificationExclude>
-        <checkModificationExclude>**</checkModificationExclude>
-    </checkModificationExcludes> 
 				</configuration>
 				<dependencies>
 					<dependency>
