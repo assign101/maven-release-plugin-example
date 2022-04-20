@@ -17,6 +17,10 @@
 			<!-- http://localhost:8081/repository/<repository-name> -->
 			<url>http://localhost:8081/repository/api-release</url>
 		</repository>
+                 <snapshotRepository>
+                        <id>nexus-releases</id>
+                        <url>http://localhost:8081/repository/api-release-snapshot</url>
+                </snapshotRepository>
 	</distributionManagement>
 	<profiles>
 		<profile>
